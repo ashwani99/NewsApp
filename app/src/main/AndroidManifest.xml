@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.newsful5.android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <service android:name="com.newsful5.android.RssService"/>
+
+        <activity android:name=".NDActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".list.SettingsMenu" android:label="@string/title_activity_settings_menu" android:theme="@style/Theme.Transparent" android:windowIsFloating="true"/>
+        <activity android:name=".list.TechList" android:label="@string/title_activity_tech_list" android:theme="@style/Theme.Transparent"/>
+        <activity android:name=".WebViewClass" android:label="FunkyNewz"/>
+    </application>
+
+</manifest>

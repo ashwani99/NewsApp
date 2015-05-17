@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/icon_food_blue" />
+    <item>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffbce0c4" />
+    <corners android:radius="0px"/>
+    <size android:height="@android:dimen/thumbnail_height"/>
+    <size android:width="@android:dimen/thumbnail_width"/>
+     />
+</shape>
+        </item>
+    </layer-list>
